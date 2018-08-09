@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+				<form name="f5" method="post" action="CreateVehicleServlet" onsubmit="return validation();">
+					<br><br><br><br><br><br><br>
+					<table align="center" border="3px">
+						<tr>
+							<td>Name</td>
+							<td><input name="name" type="text"></td>
+						</tr>
+						<tr>
+							<td>Type</td>
+							<td><select name="type">
+									<option value="AC">AC</option>
+									<option value="NON-AC">NON-AC</option>
+							</select></td>
+
+						</tr>
+						<tr>
+							<td>Registration Number</td>
+							<td><input name="rnumber" type="text"></td>
+						</tr>
+						<tr>
+							<td>Seating Capacity</td>
+							<td>
+		
+							<input name="capacity" type="number">
+						</td>
+						</tr>
+						<tr>
+							<td>Fare per Km.</td>
+							<td><input name="fpkm" type="text" value="(Rs.)" type="text"
+								style="color: #888;" onfocus="inputFocus(this)"
+								onblur="inputBlur(this)"></td>
+
+						</tr>
+						<tr>
+							<td></td>
+							<td><input name="submit" type="submit"
+								value="Register Vehicle"></td>
+						</tr>
+					</table>
+					<br>
+				</form>
+</body>
+</html>
